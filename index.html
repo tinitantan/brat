@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>brat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       html, body {
         height: 100%;
@@ -27,32 +28,32 @@
         justify-content: center;
         align-items: center;
         flex-grow: 1;
+        padding: 1rem;
       }
 
       h1 {
-        font-size: 7vw;
+        font-size: clamp(2rem, 7vw, 6rem);
         margin: 0;
         transform: scaleX(0.7);
         font-weight: normal;
         filter: blur(2px);
+        text-align: center;
       }
 
       p {
-        font-size: 2vw;
+        font-size: clamp(1rem, 4vw, 2rem);
         margin-top: 1rem;
         filter: blur(2px);
         text-align: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        max-width: 90%;
       }
 
       .tiny {
-        font-size: 1vw;
+        font-size: clamp(0.8rem, 2.5vw, 1.5rem);
         margin-bottom: 1rem;
-        filter: blur(1px); /* less blur here */
+        filter: blur(1px);
         text-align: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        max-width: 90%;
       }
     </style>
   </head>
